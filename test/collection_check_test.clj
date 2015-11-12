@@ -8,7 +8,7 @@
   (gen/tuple gen/int))
 
 (deftest test-identities
-  (assert-vector-like 100 [] gen-element)
+  (assert-vector-like 100 [1] gen-element)
   (assert-map-like 100 (sorted-map) gen-element gen-element {:base (sorted-map) :ordered? true})
   (assert-map-like 100 {} gen-element gen-element)
   (assert-set-like 100 (sorted-set) gen-element {:base (sorted-set) :ordered? true})

@@ -244,6 +244,8 @@
         (map pr-meta rst)))))
 
 (defn- report-failing-actions [x]
+  (when (get-in x [:message :shrunk])
+    (println x))
   (when (and (= :fail (:type x))
              (get-in x [:message :shrunk]))
     (let [actions (get-in x [:message :shrunk :smallest])]
