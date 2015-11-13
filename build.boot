@@ -3,7 +3,7 @@
                           [adzerk/boot-test "1.0.5" :scope "test"]
                           [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
                           [org.clojure/test.check "0.8.0"]
-                          [com.gfredericks/test.chuck "0.1.21"]])
+                          [com.gfredericks/test.chuck "0.1.22"]])
 
 (require '[adzerk.boot-test :refer [test]]
          '[crisptrutski.boot-cljs-test :refer [test-cljs]]
